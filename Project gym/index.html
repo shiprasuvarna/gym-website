@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipfreak Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Bona Nova', serif;
+        color: azure;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-style: italic;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 23px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: azure;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: rgb(255, 218, 218);
+        text-decoration: underline;
+        padding: 34px 23px;
+    }
+
+    .btn {
+        font-family: 'Bona Nova', serif;
+        margin: 0px 9px;
+        color: azure;
+        background-color: rgba(132, 83, 83, 0.162);
+        cursor: pointer;
+        padding: 12px 14px;
+        border: 2px solid rgba(255, 225, 225, 0.411);
+        font-size: 15px;
+        font-family: 'Bona Nova', serif;
+        font-weight: bold;
+
+
+    }
+
+    .btn:hover {
+        background-color: rgba(229, 217, 217, 0.128);
+    }
+
+    .container {
+        /* border: 2px solid purple; */
+        margin: 106px 82px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form.group input {
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid grey;
+        margin: 10px auto;
+        border-radius: 8px;
+        font-size: 25px;
+
+    }
+    .form.group input:hover{
+        color: rgb(20, 18, 16);
+        background-color: rgb(246, 208, 172) ;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Shipfreak Fitness</div>
+        </div>
+        <!-- left box for logo -->
+
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- mid box for navbar -->
+
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <!-- right box for search and buttons -->
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Andheri now</h1>
+        <form action="noaction.php"></form>
+        <div class="form group">
+            <input type="text" name="" placeholder="Enter your full name">
+        </div>
+        <div class="form group">
+            <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form group">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="form group">
+            <input type="text" name="" placeholder="Enter your locality">
+        </div>
+        <div class="form group">
+            <input type="text" name="" placeholder="Enter your email/phone number">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+
+</body>
+
+</html>
